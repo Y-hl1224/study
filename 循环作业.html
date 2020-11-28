@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    var i = prompt('请输入数字');
+    
+    //     i = Number(i);
+    //     for (var i=1;i<=100; i++){
+    //         if(i % 2 == 0){
+    //             alert('偶数')
+    //         }else if (i % 2 == 1){
+    //             alert('奇数')
+    //         }
+    //     }
+
+
+    // 奇偶数
+	// var i=(parseInt(prompt("请输入数字")));
+	// if(i%2==0){
+	// 	document.write(alert("偶数"));
+	// }else{
+	// 	document.write(alert("奇数"));
+	// }
+
+
+    // 闰年 平年
+    //  var i=(parseInt(prompt('请输入年份')));
+    //  if (i % 4 == 0 || i % 400==0 && i%100!==0){
+    //     document.write(alert("运年"));
+    //  }else{
+    //      document.write(alert("平年"))
+    //  }
+
+
+     //判断一个男的是否为18岁
+    //  var i =(parseInt(prompt("你几岁了")));
+    //  if(i<18){
+    //      document.write(alert("毛孩子"));
+    //  }else{
+    //      document.write(alert("成年了"))
+    //  }
+
+    // 石头剪刀布
+    // var res = prompt('数字');
+    //     console.log(res);
+    //     res  = Number(res);
+    //     if(res===1){
+    //         alert('剪刀')
+    //     }else if(res===2){
+    //         alert('布')
+    //     }else if(res==0){
+    //         alert('石头')
+    //     }else{
+    //         alert('麻泰彪吃便便')
+    //     }
+
+
+      //输入a、b两个数如果b>a则将b给a为了a一直大于等于b
+    //   var a = prompt('请输入第一个数');
+	// 		var b = prompt('请输入第二个数');
+	// 		if(a<b){
+	// 			var c= b;
+	// 			    b= a;
+	// 			    a= c;
+    //             document.write(a+'<'+b)
+				
+	// 		}else if(a>b){
+    //             document.write(a+'<'+b)
+	// 		}
+
+
+
+
+     //从大到小排序a、b、c三个整数
+    // var a =prompt('请输入第一个数');
+	// 			b = prompt('请输入第二个数');
+	// 			c = prompt('请输入第三个数');
+	// 		if(a>b&&a>c){
+	// 		if(b>c){
+	// 			console.log(a+'>'+b+'>'+c);
+	// 		}else{
+	// 			console.log(a+'>'+c+'>'+b)
+	// 		}
+	// 		}else if(b>a&&b>c){
+	// 			if(a>c){
+	// 				console.log(b+'>'+a+'>'+c);
+	// 			}else{
+	// 				console.log(b+'>'+c+'>'+a)
+	// 			}
+	// 		}else if(c>a&&c>b){
+	// 			if(a>b){
+	// 				console.log(c+'>'+a+'>'+b);
+	// 			}else{
+	// 				console.log(c+'>'+b+'>'+a)
+	// 			}
+	// 		}
+
+     //  从大到小排序a、b、c三个整数
+    //  var i = prompt ('数a');
+    //  var j = prompt ("数b");
+    //  var k = prompt ("数c");
+    //    if(i<j && j<k){
+    //        document.write(k+'>'+j+'>'+i);
+    //    }if(i<k && k<j){
+    //        document.write(j+'>'+k+'>'+i);
+    //    }if(j<i && i<k){
+    //        document.write(k+'>'+i+'>'+j);
+    //    }if (j<k && k<i){
+    //        document.write(i+'>'+k+'>'+j);
+    //    }if (k<j && j<i){
+    //        document.write(i+'>'+j+'>'+k);
+    //    }if (k<i && i<j){
+    //        document.write(j+'>'+i+'>'+k);
+    //    }
+
+    // 星期几
+    // var i = prompt('请输入');
+    // if(i%7==0){
+    //     document.write('星期一');
+    // }else if(i%7==1){
+    //     document.write('星期二');
+    // }else if(i%7==2){
+    //     document.write('星期三');
+    // }else if(i%7==3){
+    //     document.write('星期四');
+    // }else if (i%7==4){
+    //     document.write('星期五');
+    // }else if (i%7==5){
+    //     document.write('星期六');
+    // }else if (i%7==6){
+    //     document.write('星期日');
+    // }
+
+
+     //嫁人
+    //  var i = prompt('你的身高');
+    //  var j = prompt('你的钱钱');
+    //  var k = prompt('你的颜值');
+    //  if (i>180 && j>10000000000 && k>500){
+    //        document.write('嫁 爱了 爱了');
+    //  }else if(i>180 || j>100000000 ||k>500){
+    //        document.write('勉强嫁');
+    //  }else if(i<180 && j<1000000000 && k<500){
+    //      document.write('扯淡')
+    //  }
+     
+     // 飞机
+     var b = prompt('你的月份');
+     var c = prompt('你的仓型');
+	 var a =4000
+     for (i=1 ; i<=12; i++){
+            document.write(+i  + '月份');
+            if(i>=4 && i<=10){
+               b = a*0.9;
+               c = a*0.75;
+               document.write('牛逼仓' + b);
+               document.write('垃圾仓' + c);
+            }else{
+                b=a*0.6;
+                c=a*0.3;
+                document.write('牛逼仓' + b);
+                document.write('垃圾仓' + c);
+            }  
+
+            
+     }
+			
+    </script>
+</body>
+</html>
